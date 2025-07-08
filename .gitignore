@@ -1,0 +1,23 @@
+# Node
+node_modules/
+dist/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+*.log
+*.tmp
+*.dll
+
+# Pastas e arquivos pessoais
+.bash_history
+.gitconfig
+.node_repl_history
+.m2/
+.jdk/
+.lesshst
+.redhat/
+AppData/
