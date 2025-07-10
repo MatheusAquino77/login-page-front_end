@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ɵEmptyOutletComponent } from "@angular/router";
 
 @Component({
@@ -12,4 +12,13 @@ export class DefaultLoginLayoutComponent {
   @Input() title: string = "";
   @Input() primaryBtnText: string = "";
   @Input() secondaryBtnText: string = "";
+    @Input() disablePrimaryBtn: boolean = true;
+  @Output("submit") onSubmit = new EventEmitter();
+  @Output("navigate") onNavigate = new EventEmitter();
+  submit(){
+    this.onSubmit.emit();
+  }
+  navigate(){
+    this.onNavigate.emit();
+  }
 }
